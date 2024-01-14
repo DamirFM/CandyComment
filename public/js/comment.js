@@ -1,20 +1,22 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const title = document.querySelector('#title').value.trim();
-  const description = document.querySelector('#text-description').value.trim();
+  const comment_body = document.querySelector('#text-comment').value.trim();
+  const blogPost_id = event.target.getAttribute('data-id')
 
-  if (title && description) {
-    const response = await fetch(`/api/posts`, {
+
+  if (comment_body && blogPost_id) {
+    const response = await fetch(`/api/comments`, {
       method: 'POST',
-      body: JSON.stringify({ title,  description }),
+      body: JSON.stringify({ comment_body, blogPost_id }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      // stay on the same page
+      document.location.reload();
     } else {
       alert('Failed to create project');
     }
@@ -38,7 +40,8 @@ const delButtonHandler = async (event) => {
 };
 
 document
-  .querySelector('#btn-blog')
+  .querySelector('#btn-comment')
+  // click for button
   .addEventListener('click', newFormHandler);
 
 // document

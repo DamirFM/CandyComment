@@ -1,62 +1,45 @@
 [
   {
-    "comment_body": "Nice one!",
-    "date_created": "October 15, 2023",
-    "user_id": 1,
-    "blogPost_id": 2
+    "comment_body": "Nice one!"
+
+
   },
   {
-    "comment_body": "Loke it",
-    "date_created": "September 10, 2023",
-    "user_id": 2,
-    "blogPost_id": 1
+    "comment_body": "Loke it"
+
+
   },
   {
-    "comment_body": "Not bad",
-    "date_created": "October 20, 2023",
-    "user_id": 3,
-    "blogPost_id": 3
+    "comment_body": "Not bad"
+
+
   },
   {
-    "comment_body": "Great job!",
-    "date_created": "October 20, 2023",
-    "user_id": 2,
-    "blogPost_id": 2
+    "comment_body": "Great job!"
+
+
   },
   {
-    "comment_body": "Cool",
-    "date_created": "June 07, 2023",
-    "user_id": 3,
-    "blogPost_id": 3
+    "comment_body": "Cool"
+
   },
   {
-    "comment_body": "Awesome",
-    "date_created": "July 03, 2023",
-    "user_id": 1,
-    "blogPost_id": 3
+    "comment_body": "Awesome"
+
   },
   {
-    "comment_body": "Nice to see",
-    "date_created": "September 19, 2023",
-    "user_id": 2,
-    "blogPost_id": 3
+    "comment_body": "Nice to see"
+
   },
   {
-    "comment_body": "Amaizing!",
-    "date_created": "May 09, 2023",
-    "user_id": 1,
-    "blogPost_id": 1
+    "comment_body": "Amaizing!"
   },  
   {
-    "comment_body": "Good!",
-    "date_created": "March 08, 2023",
-    "user_id": 3,
-    "blogPost_id": 2
+    "comment_body": "Good!"
+
   },
   {
-    "comment_body": "Nice",
-    "date_created": "October 15, 2023",
-    "user_id": 3,
-    "blogPost_id": 1
+    "comment_body": "Nice"
+
   }
 ]

@@ -22,12 +22,13 @@ router.get('/', async (req, res) => {
       blogPosts, 
       logged_in: req.session.logged_in 
     });
+    console.log(res)
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get('/post/:id', async (req, res) => {
+router.get('/blogPost/:id', async (req, res) => {
   try {
     const blogPostData = await BlogPost.findByPk(req.params.id, {
       include: [
@@ -35,11 +36,14 @@ router.get('/post/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+        }
       ],
     });
 
     const blogPost = blogPostData.get({ plain: true });
-
+console.log(blogPost)
     res.render('post', {
       ...blogPost,
       logged_in: req.session.logged_in
@@ -59,7 +63,7 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-
+    console.log(user)
     res.render('profile', {
       ...user,
       logged_in: true
@@ -77,6 +81,25 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/comment', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await Comment.findAll( {
+      attributes: { exclude: ['password'] },
+      include: [{ model: BlogPost }, {model: User}],
+    });
+
+    const user = userData.get({ plain: true });
+    console.log(user);
+    res.render('comments', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
