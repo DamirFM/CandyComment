@@ -9,7 +9,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/)
 
-## Project Description🍬
+## Description🍬
 
 Candy Comment is a web application that allows users to create, view, and interact with blog posts and comments. Users can register, log in, and share their thoughts through comments on various blog posts. Below is an overview of the application's functionality and the structure of the code.
 

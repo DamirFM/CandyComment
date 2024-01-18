@@ -1,7 +1,7 @@
 // Imports
 const User = require("./ex_user");
-const BlogPost = require("./blogPost");
-const Comment = require("./comment");
+const BlogPost = require("./ex_blogPost");
+const Comment = require("./ex_comment");
 
 
 // Sets up relationship between tables and allows me to join them using Sequelize
