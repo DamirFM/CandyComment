@@ -26,7 +26,7 @@ Candy Comment is a web application that allows users to create, view, and intera
 
 ## Link of deployed application
 
-- 
+- https://obscure-springs-09885-d317ca652a50.herokuapp.com
 
 ## Features
 
