@@ -45,7 +45,6 @@ Candy Comment is a web application that allows users to create, view, and intera
 - Users can leave comments on blog posts.
 - Comments include user information.
 
-
 ## Screenshots of application
 
 ### Welcome screen
