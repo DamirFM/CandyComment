@@ -25,8 +25,8 @@ const newFormHandler = async (event) => {
 
 
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+  if (event.target.hasAttribute('dataa-id')) {
+    const id = event.target.getAttribute('dataa-id');
 
     const response = await fetch(`/api/comments/${id}`, {
       method: 'DELETE',
@@ -46,5 +46,5 @@ document
   .addEventListener('click', newFormHandler);
 
 document
-  .querySelector('.project-list')
+  .querySelector('.profile')
   .addEventListener('click', delButtonHandler);
