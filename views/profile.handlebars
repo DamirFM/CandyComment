@@ -1,8 +1,11 @@
-{{>profile_form}}
+<div class="profile-container">
+<section class="profile">
+  {{>profile_form}}
+  {{#each blogPosts as |blogPost|}}
 
-{{#each blogPosts as |blogPost|}}
-{{>profile_card}}
-{{/each}}
-
-
+  {{>profile_card}}
+ 
+  {{/each}}
+</section>
+</div>
 <script src="/js/profile.js"></script>

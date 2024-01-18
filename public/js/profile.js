@@ -14,33 +14,33 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.reload();
     } else {
-      alert('Failed to create project');
+      alert('Failed to create post');
     }
   }
 };
 
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+  if (event.target.hasAttribute('dataa-id')) {
+    const id = event.target.getAttribute('dataa-id');
 
-    const response = await fetch(`/api/projects/${id}`, {
+    const response = await fetch(`/api/posts/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.reload();
     } else {
-      alert('Failed to delete project');
+      alert('Failed to delete post');
     }
   }
 };
 
 document
-  .querySelector('#btn-blog')
+  .querySelector('.btn-primary')
   .addEventListener('click', newFormHandler);
 
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
+  document
+  .querySelector('.profile')
+  .addEventListener('click', delButtonHandler);
