@@ -38,21 +38,18 @@
 
 ![Alt text](./screenshots/1.png "Welcome screen")
 
-### Top Wines
+### Login page
 
-![Alt text](./screenshots/2.png "Top Wines")
+![Alt text](./screenshots/2.png "Login page")
 
-### About us
+### Profile page
 
-![Alt text](./screenshots/3.png "About us")
+![Alt text](./screenshots/3.png "Profile page")
 
-### Login Page
+### Comments page
 
-![Alt text](./screenshots/4.png "Login Page")
+![Alt text](./screenshots/4.png "Comments page")
 
-### Profile
-
-![Alt text](./screenshots/5.png "Profile")
 
 ## Installation
 

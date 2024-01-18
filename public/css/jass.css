@@ -420,12 +420,12 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: #3ebc1b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
+  color: #3ebc1b;
   text-decoration: underline;
 }
 
@@ -912,7 +912,7 @@ a:hover {
 }
 
 .text-link {
-  color: #1b89bc !important;
+  color: #99aab2 !important;
 }
 
 /* BACKGROUND UTILS */
@@ -1087,7 +1087,7 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  background-color: rgb(17, 178, 219);
   color: #d9e9e8;
 }
 

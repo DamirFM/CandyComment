@@ -1,11 +1,13 @@
 <div class="profile-container">
 <section class="profile">
+  <h2>Hello {{name}}!</h2>
   {{>profile_form}}
+  <h3>Your BlogPosts:</h3>
   {{#each blogPosts as |blogPost|}}
-
   {{>profile_card}}
- 
   {{/each}}
+
+
 </section>
 </div>
 <script src="/js/profile.js"></script>
