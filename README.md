@@ -59,9 +59,13 @@ Candy Comment is a web application that allows users to create, view, and intera
 
 ![Alt text](./screenshots/3.png "Profile page")
 
+### Profile page
+
+![Alt text](./screenshots/4.png "Post Blog page")
+
 ### Comments page
 
-![Alt text](./screenshots/4.png "Comments page")
+![Alt text](./screenshots/5.png "Comments page")
 
 
 
