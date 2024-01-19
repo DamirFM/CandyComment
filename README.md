@@ -64,6 +64,7 @@ Candy Comment is a web application that allows users to create, view, and intera
 ![Alt text](./screenshots/4.png "Comments page")
 
 
+
 ## Installation
 
 Follow these steps to set up the Candy Comment App on your local machine:
