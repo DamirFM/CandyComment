@@ -1,13 +1,13 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
-
+  // Collect values from the blogPost form
   const title = document.querySelector('#title').value.trim();
   const description = document.querySelector('#text-description').value.trim();
 
   if (title && description) {
     const response = await fetch(`/api/posts`, {
       method: 'POST',
-      body: JSON.stringify({ title,  description }),
+      body: JSON.stringify({ title, description }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -20,7 +20,7 @@ const newFormHandler = async (event) => {
     }
   }
 };
-
+// delete blog post
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('dataa-id')) {
     const id = event.target.getAttribute('dataa-id');
@@ -41,6 +41,6 @@ document
   .querySelector('.btn-primary')
   .addEventListener('click', newFormHandler);
 
-  document
+document
   .querySelector('.profile')
   .addEventListener('click', delButtonHandler);

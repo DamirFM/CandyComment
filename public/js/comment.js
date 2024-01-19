@@ -1,10 +1,11 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
+  // grab data from comment form
   const comment_body = document.querySelector('#text-comment').value.trim();
   const blogPost_id = event.target.getAttribute('data-id')
 
-
+  // check for new comment
   if (comment_body && blogPost_id) {
     const response = await fetch(`/api/comments`, {
       method: 'POST',
@@ -23,7 +24,7 @@ const newFormHandler = async (event) => {
   }
 };
 
-
+// delete comment
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('dataa-id')) {
     const id = event.target.getAttribute('dataa-id');

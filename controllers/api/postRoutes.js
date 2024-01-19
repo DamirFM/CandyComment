@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { BlogPost } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// for creating new post
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await BlogPost.create({
@@ -14,7 +15,7 @@ router.post('/', withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+// for delete post
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const reviewData = await BlogPost.destroy({
