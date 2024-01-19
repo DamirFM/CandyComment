@@ -49,7 +49,7 @@ Candy Comment is a web application that allows users to create, view, and intera
 
 ### Welcome screen
 
-![Alt text](./screenshots/1.png "Welcome screen")
+![Alt text](/screenshots/1.png "Welcome screen")
 
 ### Login page
 
@@ -59,7 +59,7 @@ Candy Comment is a web application that allows users to create, view, and intera
 
 ![Alt text](./screenshots/3.png "Profile page")
 
-### Profile page
+### Post Blog page
 
 ![Alt text](./screenshots/4.png "Post Blog page")
 
